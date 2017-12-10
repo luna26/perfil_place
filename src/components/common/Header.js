@@ -16,8 +16,8 @@ const Header = (props) => {
 // Create a object to use the styles
 const styles = {
     viewStyle:{
-        backgroundColor: '#F8F8F8',
-        height: 80,
+        backgroundColor: '#0080ff',
+        height: 60,
         justifyContent: 'center', //modify the content vertically flex-start, flex-end, center
         alignItems: 'center', //modify the content horizontally flex-start, center, flex-end
         shadowColor:'#000',
@@ -28,7 +28,8 @@ const styles = {
     },
 
     textStyle:{
-        fontSize: 20
+        fontSize: 20,
+        color:'#fff'
     }
 }
 

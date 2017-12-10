@@ -26,7 +26,6 @@ class LoginForm extends Component {
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(this.onLoginSuccess.bind(this))
             .catch((e) => {
-                console.log(e);
                 firebase.auth().createUserWithEmailAndPassword(email, password)
                     .then(this.onLoginSuccess.bind(this))
                     .catch(this.onLoginFail.bind(this));
@@ -52,8 +51,7 @@ class LoginForm extends Component {
     render() {
         const { errorTextStyle, cardContainer } = styles;
         return (
-            <View style={{flex:1}}>
-                <Header headerText='Inicio de Sesión' />
+            <View style={{flex:1, justifyContent:'center'}}>
                 <View style={cardContainer}>
                     <Card>
                         <CardSection>

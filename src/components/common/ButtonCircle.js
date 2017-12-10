@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = ({ onPress, children }) => {
+const ButtonCircle = ({ onPress, children }) => {
     const { buttonStyle, textStyle } = styles;
     return (
         <TouchableOpacity onPress={onPress} style={buttonStyle}>
@@ -14,10 +14,9 @@ const Button = ({ onPress, children }) => {
 
 const styles = {
     buttonStyle:{
-        flex:1,
         alignSelf: 'stretch',
         backgroundColor: '#fff',
-        borderRadius: 5,
+        borderRadius: 50,
         borderWidth: 1,
         borderColor: '#007aff',
         marginLeft: 5,
@@ -33,4 +32,4 @@ const styles = {
     }
 }
 
-export { Button };
+export { ButtonCircle };
