@@ -1,0 +1,3 @@
+rootProject.name = 'perfil_place'
+
+include ':app'
